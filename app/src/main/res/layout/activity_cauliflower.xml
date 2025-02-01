@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CauliflowerActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageCauliflower1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/cauliflower_1" />
+
+            <TextView
+                android:id="@+id/nameCauliflower"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageCauliflower1"
+                android:text="Cauliflower"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nameCauliflower"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerIntroduction"
+                    android:padding="15dp"
+                    android:text="1. Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerClimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerIntroduction"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerClimate"
+                    android:padding="15dp"
+                    android:text="2. Climate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerSoil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerClimate"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerSoil"
+                    android:padding="15dp"
+                    android:text="3. Soil"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerSeedTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerSoil"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerSeedTreatment"
+                    android:padding="15dp"
+                    android:text="4. Seed Treatment"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerSeedRate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerSeedTreatment"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerSeedRate"
+                    android:padding="15dp"
+                    android:text="5. Seed Rate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerIrrigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerSeedRate"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerIrrigation"
+                    android:padding="15dp"
+                    android:text="6. Irrigation"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerDiseasesAndManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerIrrigation"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerDiseaseManagement"
+                    android:padding="15dp"
+                    android:text="7. Diseases And Management"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCauliflowerYield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardCauliflowerDiseasesAndManagement"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="cauliflowerYield"
+                    android:padding="15dp"
+                    android:text="8. Yield"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleCropPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Cauliflower"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TomatoActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageTomato1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/tomato1" />
+
+            <TextView
+                android:id="@+id/nameTomato"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageTomato1"
+                android:text="Tomato"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nameTomato"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoIntroduction"
+                    android:padding="15dp"
+                    android:text="1. Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoClimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoIntroduction"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoClimate"
+                    android:padding="15dp"
+                    android:text="2. Climate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoSoil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoClimate"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoSoil"
+                    android:padding="15dp"
+                    android:text="3. Soil"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoSowing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoSoil"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoSowing"
+                    android:padding="15dp"
+                    android:text="4. Sowing And Seed"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoLandPreparationAndManuring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoSowing"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoLandPreparation"
+                    android:padding="15dp"
+                    android:text="5. Land Preparation And Manuring"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoFertilizers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoLandPreparationAndManuring"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoFertilizers"
+                    android:padding="15dp"
+                    android:text="6. Fertilizers"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoDiseasesAndManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoFertilizers"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoDiseaseManagement"
+                    android:padding="15dp"
+                    android:text="7. Diseases And Management"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoHarvestingAndThresing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoDiseasesAndManagement"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoHarvesting"
+                    android:padding="15dp"
+                    android:text="8. Harvesting"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTomatoYield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardTomatoHarvestingAndThresing"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="tomatoYield"
+                    android:padding="15dp"
+                    android:text="9. Yield"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleCropPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Tomato"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

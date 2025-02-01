@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnionActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageOnion1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/onion1" />
+
+            <TextView
+                android:id="@+id/nameOnion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageOnion1"
+                android:text="Onion"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="15dp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nameOnion"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionIntroduction"
+                    android:padding="15dp"
+                    android:text="1. Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionClimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionIntroduction"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionClimate"
+                    android:padding="15dp"
+                    android:text="2. Climate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionSoil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionClimate"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionSoil"
+                    android:padding="15dp"
+                    android:text="3. Soil"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionSowingAndSeed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionSoil"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionSowingAndSeed"
+                    android:padding="15dp"
+                    android:text="4. Sowing And Seed"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionMethodOfSowing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionSowingAndSeed"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionMethodOfSowing"
+                    android:padding="15dp"
+                    android:text="5. Method of Sowing"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionLandPreparation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionMethodOfSowing"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionLandPreparation"
+                    android:padding="15dp"
+                    android:text="6. Land Preparation"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionFertilizers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionLandPreparation"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionFertilizers"
+                    android:padding="15dp"
+                    android:text="7. Fertilizers"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionDiseaseManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionFertilizers"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionDiseaseManagement"
+                    android:padding="15dp"
+                    android:text="8. Disease and Their Management"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionHarvesting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionDiseaseManagement"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionHarvesting"
+                    android:padding="15dp"
+                    android:text="9. Harvesting"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOnionYield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardOnionHarvesting"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="onionYield"
+                    android:padding="15dp"
+                    android:text="10. Yield"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleCropPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Onion"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

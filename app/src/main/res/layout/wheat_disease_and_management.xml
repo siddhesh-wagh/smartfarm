@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flag smut"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:text="Symptoms :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:text="It is seed borne disease. infection spread through wind.
+It is favoured by cool, humid conditions during flowering period of the host plant.
+Wheat infected with flag smut has long gray and black lesions on the leaves and leaf sheaths.
+As flag smut lesions break open, they realse large amounts of black, powdery spores of the fungus."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:text="Management :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:text="Treat the seed with fungicides like carboxyl
+(Vitavax 75 WP @2.5 gm/kg of seeds), Carbendazim (Bavistin 50 WP) @2.5 gm/kg of seed),
+Tebuconazole (Raxil 2 DS) @1.25 gm/kg of seed) if the disease level in the seed
+lot is high. If it is low to moderate, treat the seed with a combination of
+Trichoderma viride@4 gm/kg seed and half the recommended dose of Carboxin
+(Vitavax 75 WP) @1.25 gm/kg seed."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageFlagSmut"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/text5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/flagsmut"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageFlagSmut"
+                android:text="Powdery mildew"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text6"
+                android:text="Symptoms :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text7"
+                android:text="Greyish white powdery growth appears on the leaf, sheath, stem and floral parts.
+Powdery growth later become black lesion and cause drying of leaves and other parts."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text8"
+                android:text="Management :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text9"
+                android:text="When incidence of disease is observed, spray with wettable sulphur
+@2 gm/Ltr of water or Carbendazim @400 gm/acre. In case of high incidence, spray with Propconzole
+@2 ml/Ltr of water."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imagePowderyMildew"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/text10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/powderymildew"/>
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagePowderyMildew"
+                android:text="Karnal bunt"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text11"
+                android:text="Symptoms :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text12"
+                android:text="It is seed and soil borne disease. Infection occurs at flowering stage.
+Cloudy weather condition during spike emergence to grain filling stage of crop leads to development
+of disease. If the rains occur during the month of February in north Indian plains (disease-prone
+areas), the disease is likely to come with higher severity."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text13"
+                android:text="Management :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text14"
+                android:text="For control of this disease use karnal bunt resistant varieties.
+For management of this disease, take one spray of Propiconazol (Tilt 25 EC
+@2 ml/Ltr of water at ear head emergence stage."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageKarnalBunt"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/text15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/karnalbunt"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="7. MAJOR DISEASES AND THEIR MANAGEMENT"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

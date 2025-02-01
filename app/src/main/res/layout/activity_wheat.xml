@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WheatActivity"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageWheat1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/wheat1" />
+
+            <TextView
+                android:id="@+id/nameWheat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imageWheat1"
+                android:text="Wheat"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatIntroduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nameWheat"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatIntroduction"
+                    android:padding="15dp"
+                    android:text="1. Introduction"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatClimate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatIntroduction"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatClimate"
+                    android:padding="15dp"
+                    android:text="2. Climate"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatSoil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatClimate"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatSoil"
+                    android:padding="15dp"
+                    android:text="3. Soil"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatSowing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatSoil"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatSowing"
+                    android:padding="15dp"
+                    android:text="4. Sowing"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatLandPreparationAndManuring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatSowing"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatLandPreparation"
+                    android:padding="15dp"
+                    android:text="5. Land Preparation And Manuring"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatFertilizers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatLandPreparationAndManuring"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatFertilizers"
+                    android:padding="15dp"
+                    android:text="6. Fertilizers"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatDiseasesAndManagement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatFertilizers"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatDiseaseAndManagement"
+                    android:padding="15dp"
+                    android:text="7. Major Diseases and their Management"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatHarvesting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatDiseasesAndManagement"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatHarvesting"
+                    android:padding="15dp"
+                    android:text="8. Harvesting"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWheatYield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cardWheatHarvesting"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="wheatYield"
+                    android:padding="15dp"
+                    android:text="9. Yield"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleCropPractice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:text="Wheat"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+</RelativeLayout>

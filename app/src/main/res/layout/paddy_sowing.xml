@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time of sowing"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:text="The optimum time of sowing are given below
+Khari - January (Beginning) or May (Beginning) Rabi - August (Beginning) - September (End)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:text="Method of sowing :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:text="Direct planting or transplanting"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:text="Seed rate and plant geometry :"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text5"
+                android:text="30k for long duration, 40kg for medium duration, 60kg for short duration
+varieties and 20kg for hybrids"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text6"
+                android:text="Seed Treatment"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text7"
+                android:text="Before sowing seed in nursery treat the seed with 4gm streptocycline
+sulphate per 25kg seed or use 40gm plantomycine."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text8"
+                android:text="Make solution in 45 lt water and dip the seed in it for night, dry it
+in shade and sow it in nurserry to control Bacterial blight."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text9"
+                android:text="Generally, it is done by making solution of 75gm thiram or 50 gm Carbendazim
+in 8-10 lt water to treat 25 kg seed."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text10"
+                android:layout_marginTop="30dp"
+                android:text="Dip the seed in it for new minutes and allow it to germinate before sowing
+in nursery. Tricoderma @125 gm per 25 kg seed can also be used to treat the seed."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="4. SOWING"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
