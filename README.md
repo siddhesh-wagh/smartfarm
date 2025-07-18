@@ -90,14 +90,15 @@ Uses AI to detect crop diseases from images:
 <img width="223" height="462" alt="image" src="https://github.com/user-attachments/assets/ae412e8e-23f1-418c-bdb7-b7e6051d39e4" />
 <img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/ebf403a3-3c50-4150-9ef3-03c1228e7d73" />
 
-<img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/d9213cbc-c87e-477a-9ea6-a1d1b80b627e" />
 <img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/9187d204-f140-4009-a4a8-4401bcddd2df" />
-
 <img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/9f5e3ad3-43fa-4d8e-82fe-54a428c78ac4" />
-<img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/11b856e6-6f6f-4b92-beab-47560e3c5ef2" />
 
+<img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/11b856e6-6f6f-4b92-beab-47560e3c5ef2" />
 <img width="220" height="458" alt="image" src="https://github.com/user-attachments/assets/275e580a-9a79-492c-9f58-b1c84132c42f" />
+
 <img width="203" height="458" alt="image" src="https://github.com/user-attachments/assets/acc62a30-7e9a-447f-bef9-e8e4d42db41e" />
+<img width="203" height="458" alt="image" src="https://github.com/user-attachments/assets/70ccfbba-d745-42fa-8676-3d09a2c84e13" />
+
 
 
 
